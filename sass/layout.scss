@@ -1,0 +1,40 @@
+@import "settings";
+@import "colors";
+
+// Sections
+// Defines some bass settings for sections and some deformers
+
+section {
+	margin: 0;
+	padding: 0;
+
+	&#intro {
+		background: transparentize($tan, 0.2);
+	}
+	&#schedule {
+		background: $mint;
+		min-height: 800px;
+	}
+	&#sponsors {
+		background: $night;
+
+		.sponsor {
+			@include span-columns(3);
+			margin: 0;
+		}
+	}
+	&#register {
+		background: $mint;
+	}
+}
+
+footer {
+	background: #444;
+}
+
+// Half
+// Defines a column that is half the current grid
+
+.half {
+	@include span-columns(6);
+}

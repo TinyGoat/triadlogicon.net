@@ -1,0 +1,60 @@
+@import "settings";
+
+// Headings
+// Defines basic heading styles
+
+h1 {
+	font-family: $base-font-family;
+	font-size: 4rem;
+	font-weight: $regular;
+	color: $base-font-color;
+}
+h2 {
+	font-family: $base-font-family;
+	font-size: 3.5rem;
+	font-weight: $bold;
+	color: $base-font-color;
+}
+h3 {
+	font-family: $base-font-family;
+	font-size: 3rem;
+	font-weight: $regular;
+	color: $base-font-color;
+}
+h4 {
+	font-family: $base-font-family;
+	font-size: 2rem;
+	font-weight: $regular;
+	color: $base-font-color;
+}
+
+p {
+	font-family: $base-font-family;
+	color: $base-font-color;
+	line-height: $base-line-height;
+}
+
+// Add-ons
+// Defines some additional characteristics that might be needed when setting type
+//
+// .is-centered		- centers type
+// .is-uppercase	- sets as upcase
+// .on-dark				- renders light for dark backgrounds
+// .on-light			- renders dark for light backgrounds
+// .small					- sets font at 80%
+
+.is-centered {
+	text-align: center;
+}
+.is-uppercase {
+	text-transform: uppercase;
+}
+.on-dark {
+	color: #fff;
+}
+.on-light {
+	color: #444;
+}
+.small {
+	font-size: 80%;
+}

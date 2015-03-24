@@ -1,0 +1,25 @@
+{
+  "name": "logicon-app",
+  "version": "1.0.0",
+  "description": "Marketing site for PTLC",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:tinygoat/piedmont-triad-logistics-con.git"
+  },
+  "author": "Tiny Goat Studio",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

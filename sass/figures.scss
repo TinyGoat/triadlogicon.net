@@ -1,0 +1,29 @@
+@import "settings";
+
+// Lists
+// Defines styles for various list applications
+
+ul.nav {
+	float: right;
+	li {
+		list-style: none;
+		float: left;
+		font-size: 0.9rem;
+		padding: $base-unit/2;
+	}
+}
+
+// Definition Lists
+// cheating a bit here; using these for sponsors
+
+dl {
+	padding: $base-unit/2;
+	dt {
+		text-align: center;
+	}
+	dd {
+		margin: 0;
+		font-size: $base-font-size - 0.2;
+		text-align: center;
+	}
+}

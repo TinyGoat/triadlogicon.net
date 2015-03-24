@@ -1,0 +1,13 @@
+@import "settings";
+
+// Grid settings
+// Defines which containers are full width, which are breaking, etc.
+
+// Content
+// Provides padding and width constraints inside other gridmembers
+
+.content {
+  @include outer-container;
+  padding: $base-unit;
+}
+
