@@ -10,13 +10,20 @@ ul.nav {
 		float: left;
 		font-size: 0.9rem;
 		padding: $base-unit/2;
+		text-transform: uppercase;
+		letter-spacing: 0.09rem;
+
+		&:hover,
+		&.selected {
+			background: transparentize(#fff, 0.3);
+		}
 	}
 }
 
 // Definition Lists
 // cheating a bit here; using these for sponsors
 
-dl {
+dl.sponsor {
 	padding: $base-unit/2;
 	dt {
 		text-align: center;
@@ -25,5 +32,30 @@ dl {
 		margin: 0;
 		font-size: $base-font-size - 0.2;
 		text-align: center;
+	}
+}
+
+//
+
+dl.node {
+	border: 2px solid #fff;
+	padding: $base-unit/2;
+	@include transition(all ease-in-out 0.20s);
+
+	&:hover {
+		background: darken($mint, 20%);
+		margin-left: $base-unit/3;
+		cursor: pointer;
+	}
+
+	dt {
+		color: #fff;
+		font-size: 1.4rem;
+		font-weight: $bold;
+	}
+
+	dd {
+		margin: 0;
+		color: transparentize(#fff, 0.3);
 	}
 }

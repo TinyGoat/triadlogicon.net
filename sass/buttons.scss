@@ -1,0 +1,21 @@
+@import "settings";
+
+#{$all-buttons} {
+  background-color: darken($mint, 20%);
+  border: 0;
+  color: transparentize(#fff, 0.3);
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  padding: $base-unit/2 $base-unit;
+}
+
+#{$all-buttons-focus},
+#{$all-buttons-hover} {
+	background-color: $highlight;
+	color: #fff;
+	cursor: pointer;
+}
+
+#{$all-buttons-active} {
+  background-color: $teal;
+}

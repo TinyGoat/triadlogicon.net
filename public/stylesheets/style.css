@@ -36,7 +36,7 @@ h3 {
 h4 {
   font-family: "calluna-sans", Roboto, Arial, sans-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #444; }
 
 p {
@@ -65,16 +65,38 @@ ul.nav {
     list-style: none;
     float: left;
     font-size: 0.9rem;
-    padding: 20px; }
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.09rem; }
+    ul.nav li:hover, ul.nav li.selected {
+      background: rgba(255, 255, 255, 0.7); }
 
-dl {
+dl.sponsor {
   padding: 20px; }
-  dl dt {
+  dl.sponsor dt {
     text-align: center; }
-  dl dd {
+  dl.sponsor dd {
     margin: 0;
     font-size: 0.8rem;
     text-align: center; }
+
+dl.node {
+  border: 2px solid #fff;
+  padding: 20px;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s; }
+  dl.node:hover {
+    background: #146141;
+    margin-left: 13.33333px;
+    cursor: pointer; }
+  dl.node dt {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600; }
+  dl.node dd {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7); }
 
 .content {
   max-width: 68em;
@@ -90,12 +112,16 @@ section {
   margin: 0;
   padding: 0; }
   section#intro {
-    background: rgba(205, 203, 185, 0.8); }
+    background: rgba(205, 203, 185, 0.9); }
   section#schedule {
-    background: #26B579;
+    background: #26B579 url("/images/schedule-bg.jpg") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     min-height: 800px; }
   section#sponsors {
-    background: #38475D; }
+    background: #CDCBB9; }
     section#sponsors .sponsor {
       float: left;
       display: block;
@@ -110,12 +136,54 @@ section {
 footer {
   background: #444; }
 
+.actions {
+  padding: 40px 0; }
+
 .half {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 48.82117%;
+  overflow: hidden; }
   .half:last-child {
     margin-right: 0; }
+
+.is-gridparent {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red; }
+  .is-gridparent::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #146141;
+  border: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  font-family: "calluna-sans", Roboto, Arial, sans-serif;
+  padding: 20px 40px; }
+
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #DF432A;
+  color: #fff;
+  cursor: pointer; }
+
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+  background-color: #3A6669; }
+
+.icon {
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  line-height: 3rem;
+  margin-right: 1rem; }
+  .icon.left {
+    float: left;
+    font-size: 2.75rem;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

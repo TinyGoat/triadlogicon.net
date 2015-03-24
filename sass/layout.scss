@@ -9,14 +9,18 @@ section {
 	padding: 0;
 
 	&#intro {
-		background: transparentize($tan, 0.2);
+		background: transparentize($tan, 0.1);
 	}
 	&#schedule {
-		background: $mint;
+		background: $mint url('/images/schedule-bg.jpg') center center no-repeat fixed;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 		min-height: 800px;
 	}
 	&#sponsors {
-		background: $night;
+		background: $tan;
 
 		.sponsor {
 			@include span-columns(3);
@@ -28,8 +32,26 @@ section {
 	}
 }
 
+// Asides
+// Who knew?
+
+aside {
+	&#timeline {
+	}
+}
+
+// Footer
+// You know, like a footer
+
 footer {
 	background: #444;
+}
+
+// Actions
+// Defines a section for buttons or other action items
+
+.actions {
+	padding: $base-unit 0;
 }
 
 // Half
@@ -37,4 +59,12 @@ footer {
 
 .half {
 	@include span-columns(6);
+	overflow: hidden;
+}
+
+// Add-ons
+// Useful additions to above containers
+.is-gridparent {
+	@include outer-container;	
+	border: 1px solid red;
 }
