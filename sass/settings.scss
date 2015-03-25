@@ -16,3 +16,18 @@ $light: 100;
 $regular: 400;
 $bold: 600;
 $black: 900;
+
+// Link colors
+//
+$global-link-color: #1dafd7;
+
+a {
+	color: $global-link-color;
+	text-decoration: none;
+	&:visited {
+		color: darken($global-link-color, 10%);
+	}
+	&:active {
+		color: lighten($global-link-color, 10%);
+	}
+}

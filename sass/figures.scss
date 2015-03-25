@@ -8,14 +8,34 @@ ul.nav {
 	li {
 		list-style: none;
 		float: left;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		padding: $base-unit/2;
 		text-transform: uppercase;
 		letter-spacing: 0.09rem;
+		color: #fff;
+
+		a {
+			color: #fff;
+		}
 
 		&:hover,
 		&.selected {
-			background: transparentize(#fff, 0.3);
+			background: transparentize(#fff, 0.7);
+		}
+	}
+}
+ul.footer-nav {
+	li.fa {
+		font-size: 2rem !important;
+		margin-right: $base-unit;
+		&#facebook {
+			color: $facebook !important;
+		}
+		&#twitter {
+			color: $twitter !important;
+		}
+		&#google {
+			color: $google !important;
 		}
 	}
 }
@@ -35,7 +55,8 @@ dl.sponsor {
 	}
 }
 
-//
+// Nodes
+// Defines some containers for the convention timeline
 
 dl.node {
 	border: 2px solid #fff;
@@ -44,7 +65,6 @@ dl.node {
 
 	&:hover {
 		background: darken($mint, 20%);
-		margin-left: $base-unit/3;
 		cursor: pointer;
 	}
 
@@ -58,4 +78,57 @@ dl.node {
 		margin: 0;
 		color: transparentize(#fff, 0.3);
 	}
+}
+
+// Addresses
+// Implementation of hCards http://html5doctor.com/microformats/#hcard
+
+.vcard {
+	.street-address,
+	.locality,
+	.website {
+		display: block !important;
+	}
+	a {
+		 color: $orange;
+	}
+}
+
+// Cards
+// Defines a set of cards for use on the sponsor page
+
+.card {
+	@include span-columns(3.90);
+	padding: $base-unit/2;
+	background: $night;
+	margin-bottom: $base-unit/1.5;
+
+	* {
+		color: lighten($night, 40%);
+	}
+
+	h4 {
+		line-height: 100%;
+		text-transform: uppercase;
+		font-size: 120%;
+		margin: 10% 0;
+	}
+}
+
+// Horizontal Rule
+// Styles HR's to not suck
+
+hr {
+	height: 1px;
+	background: #222;
+	color: #222;
+	border: 0;
+	clear: both;
+}
+
+// Heart
+
+#heart {
+	color: $highlight;
+	margin: 0 3px;	
 }

@@ -7,6 +7,9 @@
 section {
 	margin: 0;
 	padding: 0;
+	position: relative;
+
+	// Named sections for the homepage
 
 	&#intro {
 		background: transparentize($tan, 0.1);
@@ -20,7 +23,11 @@ section {
 		min-height: 800px;
 	}
 	&#sponsors {
-		background: $tan;
+		background: $tan url('/images/sponsors-bg.jpg') center center no-repeat fixed;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 
 		.sponsor {
 			@include span-columns(3);
@@ -30,6 +37,27 @@ section {
 	&#register {
 		background: $mint;
 	}
+
+	// Internal section parts
+
+	&.internal {
+		background: $tan;
+	}
+}
+
+// Logo & Dates
+// Defines main logo and date container
+
+.dates {
+	@include span-columns(6);
+	min-height: 180px;
+}
+
+.logo {
+	@include span-columns(6);
+	background: url('/images/logo.png') center center no-repeat;
+	background-size: contain;
+	min-height: 180px;
 }
 
 // Asides
@@ -62,9 +90,28 @@ footer {
 	overflow: hidden;
 }
 
+// Third
+// Defines a column that is one-third the width of the current grid
+.third {
+	@include span-columns(4.18);
+	padding: 0 0 $base-unit;
+	margin: 0;
+	overflow: hidden;
+}
+
 // Add-ons
 // Useful additions to above containers
 .is-gridparent {
 	@include outer-container;	
 	border: 1px solid red;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+img.right {
+	margin-left: 20px;
 }

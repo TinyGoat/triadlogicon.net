@@ -12,8 +12,12 @@ app.use(express.static('public'));
 // set routes
 app.get('/', function(req, res) {
   res.render('index');
-});
+  res.send("Fetching homepage...")
+})
+app.get('/sponsors/', function(req, res) {
+	res.render('sponsors');
+})
 
 // Set server port
 app.listen(4000);
-console.log('server is running');
+console.log('Server running on http://localhost:4000');
