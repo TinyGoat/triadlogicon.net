@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -123,9 +124,22 @@ ul.footer-nav li.fa {
     color: #dd4b39 !important; }
 
 dl.sponsor {
-  padding: 20px; }
+  padding: 20px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  dl.sponsor:last-child {
+    margin-right: 0; }
   dl.sponsor dt {
-    text-align: center; }
+    min-height: 150≈px;
+    margin-bottom: 20px; }
+    dl.sponsor dt#tgs {
+      background: url("/images/tgs.png") center center no-repeat;
+      background-size: contain; }
+    dl.sponsor dt#ces {
+      background: url("/images/ces.png") center center no-repeat;
+      background-size: contain; }
   dl.sponsor dd {
     margin: 0;
     font-size: 0.8rem;
@@ -202,6 +216,9 @@ a {
     content: "";
     display: table; }
 
+.content-no-width {
+  padding: 40px; }
+
 a {
   color: #1dafd7;
   text-decoration: none; }
@@ -229,14 +246,6 @@ section {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-    section#sponsors .sponsor {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
-      margin: 0; }
-      section#sponsors .sponsor:last-child {
-        margin-right: 0; }
   section#register {
     background: #26B579; }
   section.internal {

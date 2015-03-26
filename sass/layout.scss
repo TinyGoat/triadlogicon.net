@@ -14,6 +14,7 @@ section {
 	&#intro {
 		background: transparentize($tan, 0.1);
 	}
+
 	&#schedule {
 		background: $mint url('/images/schedule-bg.jpg') center center no-repeat fixed;
 		-webkit-background-size: cover;
@@ -22,18 +23,15 @@ section {
   	background-size: cover;
 		min-height: 800px;
 	}
+
 	&#sponsors {
 		background: $tan url('/images/sponsors-bg.jpg') center center no-repeat fixed;
 		-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-
-		.sponsor {
-			@include span-columns(3);
-			margin: 0;
-		}
 	}
+
 	&#register {
 		background: $mint;
 	}

@@ -5,9 +5,14 @@
 
 // Content
 // Provides padding and width constraints inside other gridmembers
+// .content  						- normal content block with width constraint and padding
+// .content-no-width		- same but with no width constraint
 
 .content {
   @include outer-container;
   padding: $base-unit;
+}
+.content-no-width {
+	padding: $base-unit;
 }
 

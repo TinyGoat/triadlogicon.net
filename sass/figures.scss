@@ -45,8 +45,20 @@ ul.footer-nav {
 
 dl.sponsor {
 	padding: $base-unit/2;
+	@include span-columns(6);
+
 	dt {
-		text-align: center;
+		min-height: 150≈px;
+		margin-bottom: $base-unit/2;
+
+		&#tgs {
+			background: url('/images/tgs.png') center center no-repeat;
+			background-size: contain;
+		}
+		&#ces {
+			background: url('/images/ces.png') center center no-repeat;
+			background-size: contain;
+		}
 	}
 	dd {
 		margin: 0;
