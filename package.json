@@ -12,7 +12,6 @@
     "url": "git@bitbucket.org:tinygoat/piedmont-triad-logistics-con.git"
   },
   "author": "Tiny Goat Studio",
-  "license": "ISC",
   "dependencies": {
     "ejs": "^2.3.1",
     "express": "^4.12.3"
