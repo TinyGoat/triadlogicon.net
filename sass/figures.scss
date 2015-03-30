@@ -39,6 +39,16 @@ ul.footer-nav {
 		}
 	}
 }
+ul.address {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		margin: 0 0 $base-unit/5;
+		font-size: 130%;
+		color: transparentize(#fff, 0.2);
+	}
+}
 
 // Definition Lists
 // cheating a bit here; using these for sponsors
@@ -48,7 +58,7 @@ dl.sponsor {
 	@include span-columns(6);
 
 	dt {
-		min-height: 150≈px;
+		min-height: 150px;
 		margin-bottom: $base-unit/2;
 
 		&#tgs {

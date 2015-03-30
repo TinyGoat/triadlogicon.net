@@ -27,25 +27,7 @@
 
         <section id="intro">
         	<div class="content">
-        		<h4 class="is-centered is-uppercase on-dark">Learn how to manage and control supply chain costs with the triad’s logistics leaders.</h4>
-        		<article class="half">
-        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        			</p>
-        		</article>
-        		<article class="half">
-        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        			</p>
-        		</article>
+        		<h4 class="is-centered is-uppercase on-dark">Learn the ins and outs of logistics-including terminology and best practices—from Charles Edwards, a pioneer in the logistics industry and a founder of United Parcel Service Airlines.</h4>
         	</div>
         </section>
 
@@ -56,18 +38,17 @@
 
         			<h4 class="on-dark">About The Organizer</h4>
 
-        			<img src="http://placehold.it/190x240" class="right">
+        			<img src="/images/edwards.jpg" alt="Charles Edwards photo" class="right">
 
-	        		<p class="on-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	        		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	        		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-	        		<p class="on-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	        		quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+	        		<p class="on-dark">
+                    Charles Edwards is Executive Director of the North Carolina Center for Global Logistics. The Center is dedicated to the expansion of an logistics education program from high school to graduate school throughout the State of North Carolina. The Center provides instruction, outreach, and logistics-focused advisory services to businesses, government agencies and the military.
+                    </p>
+                    <p class="on-dark">
+                    Edwards began his career in the logistics industry as a truck driver. He was on the senior management team of the North Carolina-based airline that started United Parcel Service Airlines, helped introduce an innovative container to the international airline industry, managed a commercial airport, led the development of the world's largest air vehicle, and has been a senior advisor to public and private aviation and logistics projects in the United States, Europe, Africa, Southeast Asia and the United Arab Emirates. He is the past Chairman of Dubai- based Freight Reach Services, LLC which provides freight forwarding services in the UAE and East African countries.
+                    </p>
+                    <p class="on-dark">
+                    He holds degress from universities in Canada, the United Kingdom and the United States. He served on the faculty of the Darden School and has been a guest lecturer at universities throughout North Carolina and the U.S. He is a frequent speaker and writer about aviation and logistics topics and in 2010 co-authored Transport Logistics: The Wheel of Commerce. Mr. Edwards hosts the UNC-Chapel Hill - Tsinghua University Logistics EMBA program in Dubai and is co-developer of the Air Cargo Professional Development workshop program of The International Air Cargo Association. He also serves on various international and US logistics industry, company and education boards.
+                    </p>
 
 	        		<div class="actions">
 	        			<button class="action" id="download">Share This Event</button>
@@ -88,7 +69,7 @@
         				<div class="icon fa fa-group left"></div>
         				<dd>9:15 – 10:45</dd>
         				<dt>
-        					Root Beer game
+        					Toaster game
         				</dt>
         			</dl>
         			<dl class="node">
@@ -131,28 +112,21 @@
         	<div class="content">
         		<h4 class="on-light is-centered">Our Promotional Partners</h4>
 	        	<dl class="sponsor">
-	        		<dt id="tgs"></dt>
-	        		<dd>Web development, design, &amp; hosting.</dd>
+              <a href="http://www.tinygoatstudio.com" target="_blank">
+	        		 <dt id="tgs"></dt>
+	        		 <dd>Web development, design, &amp; hosting.</dd>
+              </a>
 	        	</dl>
 	        	<dl class="sponsor">
-	        		<dt id="ces"></dt>
-	        		<dd>Graphic design &amp; branding.</dd>
+              <a href="http://www.cesgraphicmedia.com" target="_blank">
+	        		 <dt id="ces"></dt>
+	        		 <dd>Graphic design &amp; branding.</dd>
+              </a>
 	        	</dl>
 	        </div>
         </section>
 
-        <section id="register">
-        	<div class="content">
-        		<h4 class="on-dark">Register To Attend</h4>
-
-        		<aside class="half" id="map">
-        			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25866.20102561542!2d-80.180883!3d35.866774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8853a1fbf1f87ca3%3A0xf03526de9d8dce19!2s297+Dcc+Rd%2C+Thomasville%2C+NC+27360!5e0!3m2!1sen!2sus!4v1427221325243" width="600" height="450" frameborder="0" style="border:0"></iframe>
-        		</aside>
-        		<aside class="half" id="form">
-        			Form goes here
-        		</aside>
-        	</div>
-        </section>
+        <%= include _register.ejs %>
 
         <%= include _footer.ejs %>
 

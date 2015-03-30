@@ -17,6 +17,9 @@ app.get('/', function(req, res) {
 app.get('/sponsors/', function(req, res) {
 	res.render('sponsors');
 })
+app.get('/contact/', function(req, res) {
+	res.render('contact');
+})
 
 // Set server port
 app.listen(4000);
