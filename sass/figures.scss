@@ -122,8 +122,15 @@ dl.node {
 .card {
 	@include span-columns(3.90);
 	padding: $base-unit/2;
-	background: #efefef;
+	background: #fff;
 	margin-bottom: $base-unit/1.5;
+
+	.school-logo {
+		width: 240px;
+		display: block;
+    margin-left: auto;
+    margin-right: auto
+	}
 
 	* {
 		color: lighten($night, 10%);
