@@ -108,7 +108,8 @@ ul.nav {
     padding: 20px;
     text-transform: uppercase;
     letter-spacing: 0.09rem;
-    color: #fff; }
+    color: #fff;
+    font-weight: 600; }
     ul.nav li a {
       color: #fff; }
     ul.nav li:hover, ul.nav li.selected {
