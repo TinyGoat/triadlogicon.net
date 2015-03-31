@@ -1,0 +1,30 @@
+input[type='email'],
+input[type='text'] {
+	display: block;
+	padding: $base-unit/3;
+	font-size: 1rem;
+	margin-bottom: $base-unit/4;
+}
+textarea {
+	padding: $base-unit/3;
+	display: block;
+	margin-bottom: $base-unit/4;
+	font-size: 1rem;
+}
+
+input[type='email'],
+input[type='text'],
+textarea {
+	border: 1px solid darken($tan, 10%);
+	width: 100%;
+
+	&:focus {
+		border: 1px solid darken($tan, 40%);
+		outline: none !important;
+	}
+}
+header#header {
+	h2 {
+		display: none;
+	}
+}

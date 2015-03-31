@@ -389,4 +389,31 @@ a {
     font-size: 2.75rem;
     text-align: center; }
 
+input[type='email'],
+input[type='text'] {
+  display: block;
+  padding: 13.33333px;
+  font-size: 1rem;
+  margin-bottom: 10px; }
+
+textarea {
+  padding: 13.33333px;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem; }
+
+input[type='email'],
+input[type='text'],
+textarea {
+  border: 1px solid #b8b59b;
+  width: 100%; }
+  input[type='email']:focus,
+  input[type='text']:focus,
+  textarea:focus {
+    border: 1px solid #6d694e;
+    outline: none !important; }
+
+header#header h2 {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
