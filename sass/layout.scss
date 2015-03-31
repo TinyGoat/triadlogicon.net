@@ -12,7 +12,7 @@ section {
 	// Named sections for the homepage
 
 	&#intro {
-		background: transparentize($tan, 0.1);
+		background: $facebook;
 	}
 
 	&#schedule {
@@ -49,6 +49,7 @@ section {
 .dates {
 	@include span-columns(6);
 	min-height: 180px;
+	text-align: right;
 }
 
 .logo {
@@ -56,6 +57,7 @@ section {
 	background: url('/images/logo.png') center center no-repeat;
 	background-size: contain;
 	min-height: 180px;
+	clear: both;
 }
 
 // Asides
@@ -78,6 +80,12 @@ footer {
 
 .actions {
 	padding: $base-unit 0;
+
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
+	height: 30px !important;
+	line-height: 20px;
+	}
+
 }
 
 // Half
@@ -86,6 +94,9 @@ footer {
 .half {
 	@include span-columns(6);
 	overflow: hidden;
+	iframe {
+		border: 1px solid red;
+	}
 }
 
 // Third

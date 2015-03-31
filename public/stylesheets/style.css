@@ -185,12 +185,12 @@ dl.node {
   margin-right: 2.35765%;
   width: 30.90859%;
   padding: 20px;
-  background: #38475D;
+  background: #efefef;
   margin-bottom: 26.66667px; }
   .card:last-child {
     margin-right: 0; }
   .card * {
-    color: #9dadc4; }
+    color: #4b5f7d; }
   .card h4 {
     line-height: 100%;
     text-transform: uppercase;
@@ -242,7 +242,7 @@ section {
   padding: 0;
   position: relative; }
   section#intro {
-    background: rgba(205, 203, 185, 0.9); }
+    background: #3b5998; }
   section#schedule {
     background: #26B579 url("/images/schedule-bg.jpg") center center no-repeat fixed;
     -webkit-background-size: cover;
@@ -266,7 +266,8 @@ section {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  min-height: 180px; }
+  min-height: 180px;
+  text-align: right; }
   .dates:last-child {
     margin-right: 0; }
 
@@ -277,7 +278,8 @@ section {
   width: 48.82117%;
   background: url("/images/logo.png") center center no-repeat;
   background-size: contain;
-  min-height: 180px; }
+  min-height: 180px;
+  clear: both; }
   .logo:last-child {
     margin-right: 0; }
 
@@ -286,6 +288,9 @@ footer {
 
 .actions {
   padding: 40px 0; }
+  .actions .stButton .stFb, .actions .stButton .stTwbutton, .actions .stButton .stMainServices {
+    height: 30px !important;
+    line-height: 20px; }
 
 .half {
   float: left;
@@ -295,6 +300,8 @@ footer {
   overflow: hidden; }
   .half:last-child {
     margin-right: 0; }
+  .half iframe {
+    border: 1px solid red; }
 
 .third {
   float: left;

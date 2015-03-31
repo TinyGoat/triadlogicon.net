@@ -122,11 +122,11 @@ dl.node {
 .card {
 	@include span-columns(3.90);
 	padding: $base-unit/2;
-	background: $night;
+	background: #efefef;
 	margin-bottom: $base-unit/1.5;
 
 	* {
-		color: lighten($night, 40%);
+		color: lighten($night, 10%);
 	}
 
 	h4 {
