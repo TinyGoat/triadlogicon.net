@@ -422,4 +422,73 @@ textarea {
 header#header h2 {
   display: none; }
 
+@media screen and (max-width: 480px) {
+  .half, .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .half:last-child, .logo:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 480px) {
+  dl.sponsor {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    dl.sponsor:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 480px) {
+  .dates {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .dates:last-child {
+      margin-right: 0; }
+    .dates * {
+      font-size: 120%;
+      text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .card {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .card:last-child {
+      margin-right: 0; } }
+
+nav#mobile {
+  display: none;
+  position: relative; }
+  nav#mobile .hamburger {
+    color: #fff;
+    font-size: 2rem; }
+  nav#mobile ul#mobile-nav {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    padding: 0; }
+    nav#mobile ul#mobile-nav li {
+      display: block !important;
+      width: 100%;
+      background: #26B579;
+      margin: 0; }
+  @media screen and (max-width: 480px) {
+    nav#mobile {
+      display: block;
+      background: #222;
+      padding: 0; }
+      nav#mobile .content {
+        padding: 20px; } }
+@media screen and (max-width: 480px) {
+  nav#desktop {
+    display: none; } }
+
 /*# sourceMappingURL=style.css.map */

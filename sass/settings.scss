@@ -17,6 +17,19 @@ $regular: 400;
 $bold: 600;
 $black: 900;
 
+// Breakpoints
+//
+
+$mobile: new-breakpoint(max-width 480px 12);
+
+// Debug
+//
+
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.5;
+
 // Link colors
 //
 $global-link-color: #1dafd7;
