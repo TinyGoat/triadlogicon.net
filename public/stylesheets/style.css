@@ -461,25 +461,62 @@ header#header h2 {
     .card:last-child {
       margin-right: 0; } }
 
+@media screen and (max-width: 480px) {
+  .headshot.right {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 0 0 20px !important;
+    padding: 0 !important; }
+    .headshot.right:last-child {
+      margin-right: 0; } }
+
+button.action,
+.button {
+  width: 100%;
+  margin: 20px auto 0 auto; }
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 1.25rem; } }
+
+h4 {
+  text-align: center; }
+
 nav#mobile {
   display: none;
-  position: relative; }
-  nav#mobile .hamburger {
-    color: #fff;
-    font-size: 2rem; }
+  position: relative;
+  height: 72px; }
+  nav#mobile #mobile-nav-trigger {
+    position: relative; }
+    nav#mobile #mobile-nav-trigger #menu, nav#mobile #mobile-nav-trigger #close {
+      color: #fff;
+      font-size: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    nav#mobile #mobile-nav-trigger #close {
+      display: none; }
   nav#mobile ul#mobile-nav {
     display: none;
     position: absolute;
     top: 52px;
     left: 0;
     width: 100%;
+    min-height: 1080px !important;
     z-index: 30;
-    padding: 0; }
+    padding: 0;
+    overflow: hidden;
+    background: #26B579; }
     nav#mobile ul#mobile-nav li {
       display: block !important;
       width: 100%;
       background: #26B579;
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
+      nav#mobile ul#mobile-nav li.add-margin {
+        min-height: 120px; }
   @media screen and (max-width: 480px) {
     nav#mobile {
       display: block;
